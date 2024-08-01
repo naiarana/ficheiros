@@ -1,7 +1,6 @@
 ﻿using Ficheiros.Entities;
 using System.Globalization;
 
-
 try
 {
     Console.WriteLine("Please input a full path");
@@ -29,10 +28,9 @@ try
                 
                 Product prod = new Product(produtoName, price, qte);
                 
-                sw.WriteLine(produtoName + "," + prod.Total().ToString("F2", CultureInfo.InvariantCulture));
-                
+                sw.WriteLine(produtoName + "," + prod.Total().ToString("F2", CultureInfo.InvariantCulture));  
             }
-        }
+    }
 }
 catch(IOException e) 
 
